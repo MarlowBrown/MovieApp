@@ -42,10 +42,15 @@ public class Program
         app.UseStaticFiles();
         
         app.MapStaticAssets();
-        app.UseEndpoints(endpoints =>
-        {
-            endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}/{slug?}");
-        });
+
+        app.MapControllerRoute("areas", "{areas:exists}/{controller=Home}/{action=Index}/{id?}");
+
+        app.MapControllerRoute("customRouting", "customrouting/customroute",
+            defaults: new { controller = "CustomRouting", action = "Index" });
+        
+        app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}/{slug?}");
+
+        app.MapControllers();
 
         app.Run();
     }

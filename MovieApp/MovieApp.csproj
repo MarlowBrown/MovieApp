@@ -18,4 +18,21 @@
       </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Areas\Admin\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Areas\Views\AttributeRouting\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Views\CustomRouting\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Views\DefaultRouting\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Views\Home\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Views\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Views\_ViewImports.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Views\_ViewStart.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AttributeRouting\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\CustomRouting\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\DefaultRouting\Index.cshtml" />
+    </ItemGroup>
+
 </Project>
