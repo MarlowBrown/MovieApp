@@ -45,7 +45,7 @@ public class Program
 
         app.MapControllerRoute("areas", "{areas:exists}/{controller=Home}/{action=Index}/{id?}");
 
-        app.MapControllerRoute("customRouting", "customrouting/customroute",
+        app.MapControllerRoute("custom", "customrouting/customroute",
             defaults: new { controller = "CustomRouting", action = "Index" });
         
         app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}/{slug?}");
